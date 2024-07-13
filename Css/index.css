@@ -1,0 +1,49 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f8f9fa;
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+.main-div{
+  padding-top: 10px;
+  
+ 
+}
+.award-winning{
+   
+    font-weight: 500;
+    letter-spacing: 1px;
+    line-height: 50px;
+}
+.digitalMarketing{
+    font-weight: 600;
+    letter-spacing: 2px;
+    line-height: 50px;
+}
+.content-para{
+    line-height: 30px;
+    
+}
+img{
+   border-radius: 5px;
+   box-shadow: 1px 1px 30px rgba(0, 0, 0, 0.074);
+}
+
+@keyframes fadeIn {
+    from {
+      opacity: 0;
+      transform: scale(0.9);
+    }
+    to {
+      opacity: 1;
+      transform: scale(1);
+    }
+  }
+  
+  .animated-image {
+    animation: fadeIn 2s ease-in-out;
+  }
+  
+ 
+  
