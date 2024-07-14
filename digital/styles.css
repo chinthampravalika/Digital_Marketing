@@ -1,0 +1,111 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #ffffff;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.slider-container {
+    text-align: center;
+    width: 80%;
+}
+
+.slider-container h2 {
+    color: #ff6b6b;
+    font-size: 1.5em;
+    margin: 0.5em 0;
+}
+
+.slider-container h1 {
+    font-size: 2em;
+    margin: 0.5em 0;
+}
+
+.slider-container p {
+    font-size: 1em;
+    margin: 0.5em 0 1em;
+}
+
+.slider {
+    position: relative;
+    max-width: 100%;
+    margin: auto;
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+}
+
+.slide {
+    display: none;
+    flex: 0 0 33.33%;
+}
+
+.image-container {
+    position: relative;
+    width: 100%;
+    height: 100%;
+}
+
+.image-container img {
+    width: 100%;
+    height: auto;
+    display: block;
+}
+
+.image-container.hover-effect:hover img {
+    opacity: 0.3;
+}
+
+.hover-content {
+    display: none;
+    background-color: #ff6b6b;
+    color: white;
+    padding: 50px;
+    text-align: center;
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+
+.image-container.hover-effect:hover .hover-content {
+    display: block;
+}
+
+.hover-content h3 {
+    margin: 20px 0 10px 0;
+}
+
+.hover-content a {
+    display: inline-block;
+    background-color: white;
+    color: #ff6b6b;
+    padding: 10px 20px;
+    text-decoration: none;
+    border-radius: 5px;
+    margin-top: 20px;
+}
+
+.dots {
+    text-align: center;
+    padding: 20px;
+}
+
+.dot {
+    height: 15px;
+    width: 15px;
+    margin: 0 2px;
+    background-color: #bbb;
+    border-radius: 50%;
+    display: inline-block;
+    cursor: pointer;
+}
+
+.active, .dot:hover {
+    background-color: #717171;
+}
