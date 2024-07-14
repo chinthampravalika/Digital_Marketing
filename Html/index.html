@@ -20,7 +20,7 @@
         <button class="btn btn-danger w-50" data-toggle="modal" data-target="#contactModal">Contact Us</button>
       </div>
       <div class="col-md-7 d-flex justify-content-center align-items-center mb-2">
-        <img src="/Digital_Marketing/images/img1.png" class="img-fluid w-100 animated-image mt-2" alt="Placeholder Image">
+        <img src="/images/img1.png" class="img-fluid w-100 animated-image mt-2" alt="Placeholder Image">
       </div>
     </div>
   </div>
@@ -83,22 +83,22 @@
       <div class="owl-carousel owl-theme">
           <div class="item">
               <div class="card">
-                  <img src="/Digital_Marketing/images/img2.png" class="card-img-top" alt="Service 1">
+                  <img src="/images/img2.png" class="card-img-top" alt="Service 1">
               </div>
           </div>
           <div class="item">
               <div class="card">
-                  <img src="/Digital_Marketing/images/img3.png" class="card-img-top" alt="Service 2">
+                  <img src="/images/img3.png" class="card-img-top" alt="Service 2">
               </div>
           </div>
           <div class="item">
               <div class="card">
-                  <img src="/Digital_Marketing/images/img4.png" class="card-img-top" alt="Service 3">
+                  <img src="/images/img4.png" class="card-img-top" alt="Service 3">
               </div>
           </div>
           <div class="item">
               <div class="card">
-                  <img src="/Digital_Marketing/images/img5.png" class="card-img-top" alt="Service 4">
+                  <img src="/images/img5.png" class="card-img-top" alt="Service 4">
               </div>
           </div>
       </div>
@@ -112,6 +112,28 @@
   <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
   <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"></script>
+  <!-- JavaScript -->
+<script>
+  $(document).ready(function(){
+    $('.owl-carousel').owlCarousel({
+      loop: true,
+      margin: 10,
+      nav: true,
+      responsive: {
+        0: {
+          items: 1
+        },
+        600: {
+          items: 2
+        },
+        1000: {
+          items: 4  // Adjusted to display 4 items on screens wider than 1000px
+        }
+      }
+    });
+  });
+</script>
+
 
 </body>
 </html>
